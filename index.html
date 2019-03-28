@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
@@ -19,19 +20,26 @@
             </fieldset>
             <div class="inner-form">
               <div class="input-field first-wrap">
-                <input id="search" type="text" placeholder="Czego szukasz?" />
+                <input id="search" type="text" placeholder="Co?" />
               </div>
               <div class="input-field second-wrap">
                 <input id="location" type="text" placeholder="Gdzie?" />
               </div>
               <div class="input-field third-wrap">
-                <button class="btn-search" type="button">Search</button>
+                <button class="btn-search" type="button">Znajdź</button>
               </div>
             </div>
           </form>
     </section>
-    <section id="navigation">
-
+    <section id="navigation" class="et-hero-tabs">
+        <h1>STICKY SLIDER NAV</h1>
+        <h3>Sliding content with sticky tab nav</h3>
+        <div class="et-hero-tabs-container">
+          <a class="et-hero-tab" href="index.html">Start</a>
+          <a class="et-hero-tab" href="catalog.html">Katalog</a>
+          <a class="et-hero-tab" href="contact.html">Kontakt</a>
+          <span class="et-hero-tab-slider"></span>
+        </div>
     </section>
     <section id="content">
 
@@ -39,6 +47,9 @@
     <section id="footer">
 
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
