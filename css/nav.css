@@ -1,8 +1,8 @@
-body {
+/* body {
     font-family: "Century Gothic", 'Lato', sans-serif;
-}
+} */
 
-a {
+#navigation a {
 text-decoration: none;
 }
 
@@ -18,12 +18,12 @@ background: #eee;
     text-align: center;
     padding: 0 2em;
 }
-h1 {
+#navigation h1 {
     font-size: 2rem;
     margin: 0;
     letter-spacing: 1rem;
 }
-h3 {
+#navigation h3 {
     font-size: 1rem;
     letter-spacing: 0.3rem;
     opacity: 0.6;

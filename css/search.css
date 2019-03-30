@@ -87,7 +87,6 @@
   *    `fieldset` elements in all browsers.
   */
  legend {
-   box-sizing: border-box;
    /* 1 */
    color: inherit;
    /* 2 */
@@ -125,7 +124,6 @@
   */
  [type="checkbox"],
  [type="radio"] {
-   box-sizing: border-box;
    /* 1 */
    padding: 0;
    /* 2 */
@@ -236,10 +234,6 @@
    -webkit-padding-end: 0;
  }
  
- * {
-   box-sizing: border-box;
- }
- 
  .s01 {
    display: -ms-flexbox;
    display: flex;
@@ -247,7 +241,6 @@
        justify-content: center;
    -ms-flex-align: center;
        align-items: center;
-   font-family: 'Poppins', sans-serif;
    background: url("../images/Search_001.png");
    background-size: cover;
    background-position: center center;
@@ -261,6 +254,7 @@
  
  .s01 form legend {
    font-size: 50px;
+   font-weight: 900;
    line-height: 1;
    color: #fff;
    margin-bottom: 20px;
