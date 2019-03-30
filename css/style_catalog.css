@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway";
+  background-color: aliceblue;
+}
+
+#header{
+    width: 100%;
+    height: 10vh;
+    background-image: url(../img/stock-photo-outdoors-storage-units-at-night-self-storage-facility-d-illustration-474833281.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navigation{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#start-container{
+    width: 90%;
+    display: flex;
+    flex-basis: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.start-client-card{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;  
+}
+
+#footer{
+    width: 100%;
+}
