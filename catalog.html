@@ -44,18 +44,25 @@
         </div>
     </section>
     <section id="content">
-        <section id="filters">
-            <form>
-                <ul>
-                    <li> <input type="checkbox" data-toggle=".category-a" id="cat-a"><label for="cat-a">Category
-                            A</label></li>
-                    <li><input type="checkbox" data-toggle=".category-b" id="cat-b"><label for="cat-b">Category
-                            B</label></li>
-                    <li><input type="checkbox" data-toggle=".category-c" id="cat-c"><label for="cat-c">Category
-                            C</label></li>
-                </ul>
+        <section id="filters" class="control-group">
 
-
+                <h1>Filtry</h1>
+                <label class="control control--checkbox">Kategoria A
+                  <input type="checkbox" checked="checked" data-toggle=".category-a"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <label class="control control--checkbox">Kategoria B
+                  <input type="checkbox" data-toggle=".category-b"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <label class="control control--checkbox">Kategoria C
+                  <input type="checkbox" disabled="disabled" data-toggle=".category-c"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <label class="control control--checkbox">Kategoria D
+                  <input type="checkbox" disabled="disabled" checked="checked" data-toggle=".category-d"/>
+                  <div class="control__indicator"></div>
+                </label>
 
             </form>
         </section>

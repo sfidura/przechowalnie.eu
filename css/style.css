@@ -50,20 +50,7 @@ body {
 #filters{
     background-color: chocolate;
     width: 10%;
-    display: flex;
     flex-basis: 10%;
-    justify-content: center;
-}
-
-#filters form{
-    background-color: cornflowerblue;
-    width:90%;
-    flex-basis: 90%;
-    margin-top: 25px;
-}
-
-#filters li{
-    padding-bottom: 20px;
 }
 
 #catalog{
@@ -88,145 +75,109 @@ body {
 
 /* Styling filters on catalog page. */
 
-#filters>form,
-#filters>form label,
-#filters>form input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 28px;
-  height: 28px;
+.control-group {
+    display: inline-block;
+    width: 200px;
+    height: 210px;
+    margin: 10px;
+    padding: 30px;
+    text-align: left;
+    vertical-align: top;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  }
+
+  .control {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  
+  .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #e6e6e6;
+  }
+  
+  .control--radio .control__indicator {
+    border-radius: 50%;
+  }
+
+  /* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+  pointer-events: none;
+  opacity: .6;
+  background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
   display: block;
- 
-  outline: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
-#filters>form:before {
-  content: "\f00c";
-  position: absolute;
-  left: 0;
-  right: 0;
-  line-height: 28px;
-  color: white;
-  text-align: center;
-  font-size: 16px;
-}
-#filters>form label, #filters>form label:before, #filters>form label:after,
-#filters>form input,
-#filters>form input:before,
-#filters>form input:after {
-  content: "";
-  position: absolute;
-  -webkit-perspective: 200px;
-          perspective: 200px;
-}
-#filters>form label:before, #filters>form label:after,
-#filters>form input:before,
-#filters>form input:after {
-  box-shadow: 0 0 0.5px 0px #4b3620;
-  transition: all 0.3s ease;
-}
-#filters>form label {
-  text-indent: 56px;
-  white-space: nowrap;
-  line-height: 28px;
-}
-#filters>form label:before,
-#filters>form label:after {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  background: linear-gradient(270deg, #a57746, #936a3e);
-}
-#filters>form label:after {
-  right: 0;
-  left: auto;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  background: linear-gradient(90deg, #a57746, #936a3e);
-}
-#filters>form input:before,
-#filters>form input:after {
-  width: 100%;
-  height: 50%;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  background: linear-gradient(0deg, #a57746, #936a3e);
-}
-#filters>form input:after {
-  bottom: 0;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  background: linear-gradient(180deg, #a57746, #936a3e);
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+  top: 4px;
+  left: 8px;
+  width: 3px;
+  height: 8px;
+  transform: rotate(45deg);
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
 }
 
-#filters>form input:checked:before {
-  -webkit-transform: rotate3d(1, 0, 0, 125deg);
-          transform: rotate3d(1, 0, 0, 125deg);
-  background: linear-gradient(-20deg, #a57746, #6f502f);
-}
-#filters>form input:checked:after {
-  -webkit-transform: rotate3d(1, 0, 0, -125deg);
-          transform: rotate3d(1, 0, 0, -125deg);
-  background: linear-gradient(165deg, #a57746, #6f502f);
-}
-#filters>form input:checked + label:before {
-  -webkit-transform: rotate3d(0, 1, 0, -125deg);
-          transform: rotate3d(0, 1, 0, -125deg);
-  background: linear-gradient(270deg, #a57746, #6f502f);
-}
-#filters>form input:checked + label:after {
-  -webkit-transform: rotate3d(0, 1, 0, 125deg);
-          transform: rotate3d(0, 1, 0, 125deg);
-  background: linear-gradient(90deg, #a57746, #6f502f);
-}
-#filters>form:hover input:not(:checked) + label:before,
-#filters>form input:focus:not(:checked) + label:before {
-  -webkit-transform: rotate3d(0, 1, 0, -40deg);
-          transform: rotate3d(0, 1, 0, -40deg);
-  box-shadow: 0 0 0.5px 0px #4b3620, 3px 0px 2px rgba(0, 0, 0, 0.2);
-}
-#filters>form:hover input:not(:checked) + label:after,
-#filters>form input:focus:not(:checked) + label:after {
-  -webkit-transform: rotate3d(0, 1, 0, 40deg);
-          transform: rotate3d(0, 1, 0, 40deg);
-  box-shadow: 0 0 0.5px 0px #4b3620, -3px 0px 2px rgba(0, 0, 0, 0.2);
-}
-#filters>form input:focus {
-  outline: 1px dotted !important;
-  outline-offset: 2px;
-}
-#filters>form input:focus:checked {
-  outline-offset: 5px;
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
 }
 
-#filters>form label:before {
-  transition-delay: 0.1s;
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
 }
 
-#filters>form label:after {
-  transition-delay: 0.15s;
-}
-
-#filters>form input:checked + label:before {
-  transition-delay: 0s;
-}
-
-#filters>form input:checked + label:after {
-  transition-delay: 0.1s;
-}
-
-#filters>form input:checked:before {
-  transition-delay: 0.15s;
-}
-
-#filters>form input:checked:after {
-  transition-delay: 0.2307692308s;
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
 }
