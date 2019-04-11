@@ -62,6 +62,10 @@ body {
     margin-top: 25px;
 }
 
+#filters li{
+    padding-bottom: 20px;
+}
+
 #catalog{
     background-color: darkcyan;
     width: 80%;
@@ -93,7 +97,7 @@ body {
   width: 28px;
   height: 28px;
   display: block;
-  position: relative;
+ 
   outline: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -101,11 +105,6 @@ body {
           user-select: none;
 }
 
-#filters>form {
-  background: linear-gradient(300deg, #936a3e, #6f502f);
-  box-shadow: inset 2px 2px 10px -1px #4b3620;
-  margin-left: 50px;
-}
 #filters>form:before {
   content: "\f00c";
   position: absolute;
@@ -114,7 +113,6 @@ body {
   line-height: 28px;
   color: white;
   text-align: center;
-  font-family: "Font Awesome 5 Free";
   font-size: 16px;
 }
 #filters>form label, #filters>form label:before, #filters>form label:after,
