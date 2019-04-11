@@ -47,6 +47,28 @@ body {
     padding-bottom: 50px;
 }
 
+#filters{
+    background-color: chocolate;
+    width: 10%;
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+}
+
+#filters form{
+    background-color: cornflowerblue;
+    width:90%;
+    flex-basis: 90%;
+    margin-top: 25px;
+}
+
+#catalog{
+    background-color: darkcyan;
+    width: 80%;
+    display: flex;
+    flex-basis: 80%;
+}
+
 .start-client-card{
     width: 500px;
     height: 300px;
@@ -58,4 +80,155 @@ body {
 
 #footer{
     width: 100%;
+}
+
+/* Styling filters on catalog page. */
+
+#filters>form,
+#filters>form label,
+#filters>form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 28px;
+  height: 28px;
+  display: block;
+  position: relative;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#filters>form {
+  background: linear-gradient(300deg, #936a3e, #6f502f);
+  box-shadow: inset 2px 2px 10px -1px #4b3620;
+  margin-left: 50px;
+}
+#filters>form:before {
+  content: "\f00c";
+  position: absolute;
+  left: 0;
+  right: 0;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+}
+#filters>form label, #filters>form label:before, #filters>form label:after,
+#filters>form input,
+#filters>form input:before,
+#filters>form input:after {
+  content: "";
+  position: absolute;
+  -webkit-perspective: 200px;
+          perspective: 200px;
+}
+#filters>form label:before, #filters>form label:after,
+#filters>form input:before,
+#filters>form input:after {
+  box-shadow: 0 0 0.5px 0px #4b3620;
+  transition: all 0.3s ease;
+}
+#filters>form label {
+  text-indent: 56px;
+  white-space: nowrap;
+  line-height: 28px;
+}
+#filters>form label:before,
+#filters>form label:after {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background: linear-gradient(270deg, #a57746, #936a3e);
+}
+#filters>form label:after {
+  right: 0;
+  left: auto;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  background: linear-gradient(90deg, #a57746, #936a3e);
+}
+#filters>form input:before,
+#filters>form input:after {
+  width: 100%;
+  height: 50%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background: linear-gradient(0deg, #a57746, #936a3e);
+}
+#filters>form input:after {
+  bottom: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  background: linear-gradient(180deg, #a57746, #936a3e);
+}
+
+#filters>form input:checked:before {
+  -webkit-transform: rotate3d(1, 0, 0, 125deg);
+          transform: rotate3d(1, 0, 0, 125deg);
+  background: linear-gradient(-20deg, #a57746, #6f502f);
+}
+#filters>form input:checked:after {
+  -webkit-transform: rotate3d(1, 0, 0, -125deg);
+          transform: rotate3d(1, 0, 0, -125deg);
+  background: linear-gradient(165deg, #a57746, #6f502f);
+}
+#filters>form input:checked + label:before {
+  -webkit-transform: rotate3d(0, 1, 0, -125deg);
+          transform: rotate3d(0, 1, 0, -125deg);
+  background: linear-gradient(270deg, #a57746, #6f502f);
+}
+#filters>form input:checked + label:after {
+  -webkit-transform: rotate3d(0, 1, 0, 125deg);
+          transform: rotate3d(0, 1, 0, 125deg);
+  background: linear-gradient(90deg, #a57746, #6f502f);
+}
+#filters>form:hover input:not(:checked) + label:before,
+#filters>form input:focus:not(:checked) + label:before {
+  -webkit-transform: rotate3d(0, 1, 0, -40deg);
+          transform: rotate3d(0, 1, 0, -40deg);
+  box-shadow: 0 0 0.5px 0px #4b3620, 3px 0px 2px rgba(0, 0, 0, 0.2);
+}
+#filters>form:hover input:not(:checked) + label:after,
+#filters>form input:focus:not(:checked) + label:after {
+  -webkit-transform: rotate3d(0, 1, 0, 40deg);
+          transform: rotate3d(0, 1, 0, 40deg);
+  box-shadow: 0 0 0.5px 0px #4b3620, -3px 0px 2px rgba(0, 0, 0, 0.2);
+}
+#filters>form input:focus {
+  outline: 1px dotted !important;
+  outline-offset: 2px;
+}
+#filters>form input:focus:checked {
+  outline-offset: 5px;
+}
+
+#filters>form label:before {
+  transition-delay: 0.1s;
+}
+
+#filters>form label:after {
+  transition-delay: 0.15s;
+}
+
+#filters>form input:checked + label:before {
+  transition-delay: 0s;
+}
+
+#filters>form input:checked + label:after {
+  transition-delay: 0.1s;
+}
+
+#filters>form input:checked:before {
+  transition-delay: 0.15s;
+}
+
+#filters>form input:checked:after {
+  transition-delay: 0.2307692308s;
 }

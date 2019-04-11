@@ -9,8 +9,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style_catalog.css">
-  <link rel="stylesheet" href="css/search_catalog.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -19,6 +19,9 @@
 <body>
   <section id="header" class="s01">
     <form>
+      <fieldset>
+        <legend>Znajdź miejsce dla Twoich rzeczy</legend>
+      </fieldset>
       <div class="inner-form">
         <div class="input-field first-wrap">
           <input id="search" type="text" placeholder="Co?" />
@@ -41,260 +44,15 @@
     </div>
   </section>
   <section id="content">
-    <section id="catalog-filters">
-      <button type="button" data-filter="all">All</button>
-      <button type="button" data-filter=".category-a">Category A</button>
-      <button type="button" data-filter=".category-b">Category B</button>
-      <button type="button" data-filter=".category-c">Category C</button>
-<br>
-      ==============================================================
-<br>
-      <input type="checkbox" data-toggle=".category-a">Category A
-      <input type="checkbox" data-toggle=".category-b">Category B
-      <input type="checkbox" data-toggle=".category-c">Category C
+    <section id="filters">
+   <form>
+        <input type="checkbox" data-toggle=".category-a" id="cat-a"><label for="cat-a">Category A</label>
+        <input type="checkbox" data-toggle=".category-b" id="cat-b"><label for="cat-b">Category B</label>
+        <input type="checkbox" data-toggle=".category-c" id="cat-c"><label for="cat-c">Category C</label>
+   </form>
     </section>
-    <section id="catalog-container">
-      <div class="start-client-card mix category-a">
-
-        <div class="card">
-          <nav>
-            TAGI: Warszawa, mazowieckie, gabaryty
-          </nav>
-          <div class="photo">
-            <img
-              src="img/stock-photo--d-illustration-of-self-storage-units-section-isolated-on-white-background-479049193.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="start-client-card mix category-a">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img src="img/stock-photo-self-storage-facility-750256816.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="start-client-card mix category-a">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img src="img/stock-photo-self-storage-facility-750256822.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="start-client-card mix category-b">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img src="img/stock-photo-self-storage-road-sign-against-sky-529192678.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="start-client-card mix category-b">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img src="img/stock-photo-online-small-business-owner-1035849016.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="start-client-card mix category-b">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img src="img/stock-photo-storage-units-isolated-in-a-tropical-place-193848560.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="start-client-card mix category-c">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img src="img/stock-photo-a-row-of-shipping-containers-at-a-self-storage-unit-652482829.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="start-client-card mix category-c">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img
-              src="img/stock-photo-close-up-of-a-storage-unit-with-furniture-and-boxes-in-a-secure-self-storage-facility-with-multiple-1271743651.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="start-client-card mix category-c">
-
-        <div class="card">
-          <nav>
-            Warszawa, mazowieckie
-          </nav>
-          <div class="photo">
-            <img
-              src="img/stock-photo-business-start-up-sme-concept-young-startup-entrepreneur-small-business-owner-working-at-home-696197773.jpg">
-          </div>
-          <div class="description">
-            <h1>Cudne Manowce 11</h1>
-            <h2>Przechowalnia XXL</h2>
-            <div class="description-inner-box">
-              <i class="far fa-address-card"></i>
-              <p>ul. Cudne Manowce 11, Małocice<br />przy trasie S7 (35 km od centrum Warszawy)</p>
-              <i class="fas fa-map-marked-alt"></i>
-              <p>°21'52.4"N 20°41'14.7"E<br />(52.364567, 20.687426)</p>
-              <i class="fas fa-phone"></i>
-              <p>+48 604 997 364</p>
-              <i class="fas fa-at"></i>
-              <p>piotr@cudnemanowce11.pl</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
+    <section id="catalog">
+sdfsdf
     </section>
   </section>
   <section id="footer" class="footer-distributed">
@@ -337,8 +95,7 @@
 
       <p class="footer-company-about">
         <span>O nas</span>
-        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-        vehicula sit amet.
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
       </p>
 
       <div class="footer-icons">
@@ -354,7 +111,6 @@
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/mixitup.min.js"></script>
   <script src="js/main.js"></script>
   <!-- <script src="js/nav.js"></script> -->
 </body>

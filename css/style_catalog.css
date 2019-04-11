@@ -48,14 +48,13 @@ body {
 }
 
 #catalog-filters{
-    flex-basis: 20%;
-    background-color: brown;
+    flex-basis: 10%;
 }
 
 #catalog-container{
-    width: 70%;
+    /* width: 70%; */
     display: flex;
-    flex-basis: 70%;
+    flex-basis: 80%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
