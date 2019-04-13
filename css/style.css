@@ -54,10 +54,10 @@ body {
 }
 
 #catalog{
-    background-color: darkcyan;
     width: 80%;
     display: flex;
     flex-basis: 80%;
+    flex-wrap: wrap;
 }
 
 .start-client-card{
