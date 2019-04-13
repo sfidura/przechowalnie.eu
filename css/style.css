@@ -50,6 +50,7 @@ body {
 #filters{
     background-color: chocolate;
     width: 20%;
+    height: auto;
     flex-basis: 20%;
 }
 
@@ -59,6 +60,7 @@ body {
     flex-basis: 70%;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .start-client-card{

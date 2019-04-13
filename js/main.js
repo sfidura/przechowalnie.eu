@@ -7,5 +7,5 @@ var config = {
     }
 };
 
-var mixer = mixitup('#catalog-container', config);
+var mixer = mixitup('#catalog', config);
 
