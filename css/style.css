@@ -48,7 +48,7 @@ body {
 }
 
 #filters{
-    background-color: chocolate;
+    /* background-color: chocolate; */
     width: 20%;
     height: auto;
     flex-basis: 20%;
