@@ -47,9 +47,48 @@
     <section id="content">
         <section id="filters" class="control-group">
 <ul>
+  <h1>Filtry <span>(Rozwiń aby wybrać)</span></h1> 
+    <li>
+        <input type="checkbox" id="list-item-2">
+        <label for="list-item-2" class="first"><h2>Rodzaj</h2></label>
+        <ul>
+          <li><label class="control control--checkbox">boksy
+            <input type="checkbox" data-toggle=".rodz-boksy"/>
+            <div class="control__indicator"></div>
+          </label></li>
+          <li><label class="control control--checkbox">garaże
+            <input type="checkbox" data-toggle=".rodz-garaze"/>
+            <div class="control__indicator"></div>
+          </label></li>
+          <li><label class="control control--checkbox">kontenery
+            <input type="checkbox" data-toggle=".rodz-kontenery"/>
+            <div class="control__indicator"></div>
+          </label></li>
+          <li><label class="control control--checkbox">inne rodzaje
+            <input type="checkbox" data-toggle=".rodz-inne-rodzaje"/>
+            <div class="control__indicator"></div>
+          </label></li>
+          </ul>
+    </li>
+
+    <li>
+        <input type="checkbox" id="list-item-3">
+        <label for="list-item-3" class="first"><h2>Dostęp do przechowalni</h2></label>
+        <ul>
+          <li><label class="control control--checkbox">całodobowy
+            <input type="checkbox" data-toggle=".dost-calodobowy"/>
+            <div class="control__indicator"></div>
+          </label></li>
+          <li><label class="control control--checkbox">po kontakcie
+            <input type="checkbox" data-toggle=".dost-po-kontakcie"/>
+            <div class="control__indicator"></div>
+          </label></li>
+          </ul>
+    </li>
+
   <li>
     <input type="checkbox" id="list-item-1">
-    <label for="list-item-1" class="first"><h1>Województwo</h1></label>
+    <label for="list-item-1" class="first"><h2>Województwo</h2></label>
     <ul>
       <li><label class="control control--checkbox">mazowieckie
         <input type="checkbox" data-toggle=".woj-mazowieckie"/>
@@ -121,7 +160,7 @@
 
         </section>
         <section id="catalog">
-            <div class="card mix woj-dolnoslaskie">
+            <div class="card mix woj-dolnoslaskie dost-calodobowy rodz-boksy">
                 <nav>
                   TAGI: dolnośląskie
                 </nav>
@@ -145,7 +184,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-mazowieckie">
+              <div class="card mix woj-mazowieckie dost-calodobowy rodz-boksy rodz-garaze">
                 <nav>
                   TAGI: mazowieckie
                 </nav>
@@ -169,7 +208,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-malopolskie">
+              <div class="card mix woj-malopolskie dost-calodobowy rodz-boksy rodz-kontenery">
                 <nav>
                   TAGI: małopolskie
                 </nav>
@@ -193,7 +232,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-kujawsko-pomorskie">
+              <div class="card mix woj-kujawsko-pomorskie dost-calodobowy rodz-boksy rodz-garaze">
                 <nav>
                   TAGI: kujawsko-pomorskie
                 </nav>
@@ -217,7 +256,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-lubelskie">
+              <div class="card mix woj-lubelskie dost-calodobowy rodz-kontenery">
                 <nav>
                   TAGI: lubelskie
                 </nav>
@@ -241,7 +280,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-lubuskie">
+              <div class="card mix woj-lubuskie dost-po-kontakcie rodz-boksy">
                 <nav>
                   TAGI: lubuskie
                 </nav>
@@ -265,7 +304,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-lodzkie woj-mazowieckie">
+              <div class="card mix woj-lodzkie woj-mazowieckie dost-po-kontakcie rodz-boksy rodz-garaze">
                 <nav>
                   TAGI: mazowieckie, łódzkie
                 </nav>
@@ -289,7 +328,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-opolskie woj-slaskie">
+              <div class="card mix woj-opolskie woj-slaskie dost-po-kontakcie rodz-garaze rodz-inne-rodzaje">
                 <nav>
                   TAGI: opolskie, śląskie
                 </nav>
@@ -313,7 +352,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-slaskie woj-dolnoslaskie">
+              <div class="card mix woj-slaskie woj-dolnoslaskie dost-po-kontakcie rodz-kontenery">
                 <nav>
                   TAGI: śląskie, dolnośląskie
                 </nav>
@@ -337,7 +376,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-podkarpackie">
+              <div class="card mix woj-podkarpackie dost-po-kontakcie rodz-boksy">
                 <nav>
                   TAGI: podkarpackie
                 </nav>
@@ -361,7 +400,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-podlaskie woj-warminsko-mazurskie">
+              <div class="card mix woj-podlaskie woj-warminsko-mazurskie dost-po-kontakcie rodz-boksy">
                 <nav>
                   TAGI: podlaskie, warmińsko-mazurskie
                 </nav>
@@ -385,7 +424,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-pomorskie woj-zachodniopomorskie">
+              <div class="card mix woj-pomorskie woj-zachodniopomorskie dost-po-kontakcie rodz-garaze">
                 <nav>
                   TAGI: pomorskie, zachodniopomorskie
                 </nav>
@@ -409,7 +448,7 @@
                 </div>
               </div>
 
-              <div class="card mix woj-wielkopolskie woj-swietokrzyskie woj-lubuskie woj-lodzkie">
+              <div class="card mix woj-wielkopolskie woj-swietokrzyskie woj-lubuskie woj-lodzkie dost-po-kontakcie rodz-inne-rodzaje">
                 <nav>
                   TAGI: wielkopolskie, świętokrzyskie, lubuskie, łódzkie
                 </nav>

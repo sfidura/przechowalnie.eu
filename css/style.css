@@ -54,6 +54,20 @@ body {
     flex-basis: 20%;
 }
 
+#filters h1{
+  font-size: 2rem;
+  padding: 5px;
+}
+
+#filters h1 span{
+  font-size: 0.7rem;
+}
+
+#filters h2{
+  font-size: 1rem;
+  padding: 5px;
+}
+
 #catalog{
     width: 70%;
     display: flex;
